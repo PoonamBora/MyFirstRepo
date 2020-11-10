@@ -9,6 +9,7 @@
 
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Hello World......!!!!!!!!!!"
@@ -16,6 +17,17 @@
         android:gravity="center"
         android:textSize="20sp"
 
+        />
+
+    <TextView
+        android:id="@+id/textViewSample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:text="Sample "
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
         />
 
 
