@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/header_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/enter_header_text"
+      android:textSize="20sp"
+      android:layout_marginTop="20dp"
+      />
+
+    <EditText
+        android:id="@+id/edit_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/header_text"
+        android:layout_toRightOf="@id/header_text"
+        android:hint="@string/enter_your_message"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_footer_text"
+        android:textSize="20sp"
+        android:layout_below="@id/header_text"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/footer_text"
+        android:layout_toRightOf="@id/footer_text"
+        android:layout_below="@id/edit_header"
+        android:hint="@string/enter_your_footer_messaage"
+        android:inputType="text"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+     <Button
+         android:id="@+id/btnLogo"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/footer_text"
+         android:text="@string/add_logo"
+         android:layout_marginTop="20dp"
+         />
+
+      <Button
+          android:id="@+id/btnNext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/btnLogo"
+          android:text="@string/next_activity"
+          android:layout_marginTop="60dp"
+          />
+
+
+
+</RelativeLayout>
